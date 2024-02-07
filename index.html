@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <title>Verduleria</title>
+        <link rel="icon" href="img/ico.png" type="image/png" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Listado de Productos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/banana.png" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Bananas</h5>
+                            <p class="card-text">Bananas de Ecuador.</p>
+                            <span class="price">$19.99</span>
+                            <button class="btn btn-primary btn-sm mt-2 view-details" data-bs-toggle="modal" data-bs-target="#productModal">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/piña.png" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Piñas</h5>
+                            <p class="card-text">Piñas de Brasil.</p>
+                            <span class="price">$24.99</span>
+                            <button class="btn btn-primary btn-sm mt-2 view-details" data-bs-toggle="modal" data-bs-target="#productModal">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/sandia.png" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Sandias</h5>
+                            <p class="card-text">Sandias de Australia.</p>
+                            <span class="price">$79.99</span>
+                            <button class="btn btn-primary btn-sm mt-2 view-details" data-bs-toggle="modal" data-bs-target="#productModal">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/pera.png" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Peras</h5>
+                            <p class="card-text">Peras de Argentina.</p>
+                            <span class="price">$8.99</span>
+                            <button class="btn btn-primary btn-sm mt-2 view-details" data-bs-toggle="modal" data-bs-target="#productModal">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <footer class="bg-dark text-light mt-5">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Contactos</h4>
+                        <p>Para cualquier consulta, no dudes en contactarnos:</p>
+                        <ul class="list-unstyled">
+                            <li>Email: contacto@ejemplo.com</li>
+                            <li>Teléfono: +123 456 789</li>
+                            <li>Dirección: Calle Ejemplo, Ciudad</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Síguenos en redes sociales</h4>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/" class="text-light">Facebook</a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/" class="text-light">Twitter</a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/" class="text-light">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
